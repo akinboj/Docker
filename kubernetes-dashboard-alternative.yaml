@@ -20,10 +20,10 @@ spec:
   clusterIP: 10.152.183.187
   externalTrafficPolicy: Cluster
   ports:
-  - port: 32414
   - port: 443
     protocol: TCP
     targetPort: 8443
+    nodePort: 32414
   selector:
     k8s-app: kubernetes-dashboard
   sessionAffinity: None
