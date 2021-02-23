@@ -18,15 +18,13 @@ metadata:
   uid: 793974b5-7b1a-421e-8494-47da00ed69b9
 spec:
   clusterIP: 10.152.183.187
-  externalTrafficPolicy: Cluster
   ports:
   - port: 443
     protocol: TCP
     targetPort: 8443
-    nodePort: 32414
   selector:
     k8s-app: kubernetes-dashboard
   sessionAffinity: None
-  type: NodePort
+  type: ClusterIP
 status:
   loadBalancer: {}
