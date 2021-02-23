@@ -20,7 +20,7 @@ spec:
   clusterIP: 10.152.183.187
   externalTrafficPolicy: Cluster
   ports:
-  - nodePort: 32414
+  - port: 32414
   - port: 443
     protocol: TCP
     targetPort: 8443
